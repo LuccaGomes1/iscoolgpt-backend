@@ -1,0 +1,32 @@
+name: CI - IsCoolGPT
+
+on:
+  push:
+    branches: [ "staging", "main" ]
+  pull_request:
+    branches: [ "staging", "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: |
+          pip install --no-cache-dir -r requirements.txt
+
+      - name: Smoke test - importar app
+        run: |
+          python -c "import app.main; print('App importado com sucesso')"
+
+      - name: Build da imagem Docker
+        run: |
+          docker build -t iscoolgpt-backend:ci .
