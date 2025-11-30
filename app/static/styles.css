@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background: #020617; /* bem escuro */
+  background: #020617; /* escuro */
   color: #e5e7eb;
   display: flex;
   justify-content: center;
@@ -19,22 +19,23 @@ body {
   padding: 16px;
   width: 100%;
   max-width: 900px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 50px rgba(255, 0, 0, 0.5); /* sombra vermelha */
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border: 1px solid #1f2937;
+  border: 1px solid #3f0a0a; /* borda vermelha escura */
 }
 
 header h1 {
   margin: 0;
   font-size: 1.8rem;
+  color: #ff4d4d; /* vermelho claro */
 }
 
 header p {
   margin: 4px 0 0;
   font-size: 0.9rem;
-  color: #9ca3af;
+  color: #fca5a5; /* vermelho suave */
 }
 
 main {
@@ -45,8 +46,8 @@ main {
 }
 
 #chat-window {
-  background: #020617;
-  border: 1px solid #1f2937;
+  background: #111; 
+  border: 1px solid #7f1d1d; /* vermelho escuro */
   border-radius: 12px;
   padding: 12px;
   height: 450px;
@@ -65,16 +66,19 @@ main {
   white-space: pre-wrap;
 }
 
+/* Mensagem do usuário — agora vermelho vivo */
 .message.user {
   align-self: flex-end;
-  background: #1d4ed8;
-  color: #e5e7eb;
+  background: #dc2626; /* vermelho vibrante */
+  color: #ffecec;
 }
 
+/* Mensagem do bot — vermelho escuro */
 .message.bot {
   align-self: flex-start;
-  background: #111827;
-  border: 1px solid #1f2937;
+  background: #3f0a0a;
+  border: 1px solid #7f1d1d;
+  color: #fcdcdc;
 }
 
 #chat-form {
@@ -86,34 +90,39 @@ main {
 
 .label {
   font-size: 0.85rem;
-  color: #9ca3af;
+  color: #fca5a5;
 }
 
 #user-input {
   width: 100%;
   border-radius: 10px;
-  border: 1px solid #374151;
+  border: 1px solid #b91c1c; /* vermelho */
   padding: 8px;
   resize: vertical;
   min-height: 80px;
-  background: #020617;
-  color: #e5e7eb;
+  background: #1a0000;
+  color: #ffe7e7;
 }
 
 #user-input:focus {
   outline: none;
-  border-color: #60a5fa;
+  border-color: #ef4444; /* vermelho claro */
 }
 
+/* Botão principal — vermelho */
 #send-btn {
   align-self: flex-end;
   padding: 8px 16px;
   border-radius: 999px;
   border: none;
-  background: #833bf6;
+  background: #b91c1c; /* vermelho forte */
   color: white;
   cursor: pointer;
   font-weight: 500;
+}
+
+#send-btn:hover {
+  background: #dc2626; /* vermelho mais vivo */
 }
 
 #send-btn:disabled {
