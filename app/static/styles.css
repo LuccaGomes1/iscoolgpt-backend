@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background: #020617; /* escuro */
+  background: #0a0118; /* roxo bem escuro */
   color: #e5e7eb;
   display: flex;
   justify-content: center;
@@ -14,28 +14,28 @@ body {
 }
 
 .app-container {
-  background: #020617;
+  background: #0a0118;
   border-radius: 16px;
   padding: 16px;
   width: 100%;
   max-width: 900px;
-  box-shadow: 0 20px 50px rgba(255, 0, 0, 0.5); /* sombra vermelha */
+  box-shadow: 0 20px 50px rgba(128, 0, 255, 0.4); /* sombra roxa */
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border: 1px solid #3f0a0a; /* borda vermelha escura */
+  border: 1px solid #3b0a54; /* borda roxa escura */
 }
 
 header h1 {
   margin: 0;
   font-size: 1.8rem;
-  color: #ff4d4d; /* vermelho claro */
+  color: #c084fc; /* roxo claro */
 }
 
 header p {
   margin: 4px 0 0;
   font-size: 0.9rem;
-  color: #fca5a5; /* vermelho suave */
+  color: #d8b4fe; /* roxo suave */
 }
 
 main {
@@ -46,8 +46,8 @@ main {
 }
 
 #chat-window {
-  background: #111; 
-  border: 1px solid #7f1d1d; /* vermelho escuro */
+  background: #130225; 
+  border: 1px solid #5b21b6; /* roxo escuro */
   border-radius: 12px;
   padding: 12px;
   height: 450px;
@@ -66,19 +66,19 @@ main {
   white-space: pre-wrap;
 }
 
-/* Mensagem do usuário — agora vermelho vivo */
+/* Mensagem do usuário — roxo vibrante */
 .message.user {
   align-self: flex-end;
-  background: #dc2626; /* vermelho vibrante */
-  color: #ffecec;
+  background: #7c3aed; /* roxo vivo */
+  color: #f3e8ff;
 }
 
-/* Mensagem do bot — vermelho escuro */
+/* Mensagem do bot — roxo escuro */
 .message.bot {
   align-self: flex-start;
-  background: #3f0a0a;
-  border: 1px solid #7f1d1d;
-  color: #fcdcdc;
+  background: #3b0a54;
+  border: 1px solid #6d28d9;
+  color: #ede9fe;
 }
 
 #chat-form {
@@ -90,39 +90,39 @@ main {
 
 .label {
   font-size: 0.85rem;
-  color: #fca5a5;
+  color: #d8b4fe;
 }
 
 #user-input {
   width: 100%;
   border-radius: 10px;
-  border: 1px solid #b91c1c; /* vermelho */
+  border: 1px solid #8b5cf6; /* roxo */
   padding: 8px;
   resize: vertical;
   min-height: 80px;
-  background: #1a0000;
-  color: #ffe7e7;
+  background: #1b0b33;
+  color: #f5f3ff;
 }
 
 #user-input:focus {
   outline: none;
-  border-color: #ef4444; /* vermelho claro */
+  border-color: #a78bfa; /* roxo claro */
 }
 
-/* Botão principal — vermelho */
+/* Botão principal — roxo */
 #send-btn {
   align-self: flex-end;
   padding: 8px 16px;
   border-radius: 999px;
   border: none;
-  background: #b91c1c; /* vermelho forte */
+  background: #7c3aed; /* roxo forte */
   color: white;
   cursor: pointer;
   font-weight: 500;
 }
 
 #send-btn:hover {
-  background: #dc2626; /* vermelho mais vivo */
+  background: #8b5cf6; /* roxo mais claro */
 }
 
 #send-btn:disabled {
